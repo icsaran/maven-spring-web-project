@@ -17,8 +17,8 @@ public class BaseController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
 
-		model.addAttribute("message", "Welcome to DOF Certification. ");
-		model.addAttribute("counter", ++counter);
+		model.addAttribute("Message - ", "Welcome to DOF Certification. Nice to see you :) ");
+		model.addAttribute("Counter - ", ++counter);
 		logger.debug("[welcome] counter : {}", counter);
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
